@@ -22,20 +22,8 @@ public class UIUX extends JFrame {
         label.setHorizontalAlignment(JLabel.CENTER);
         panel.add(label,BorderLayout.NORTH);
 
-        JLabel menu = new JLabel();
-        menu.setLayout(new GridLayout(0,1));
-        panel.add(menu, BorderLayout.CENTER);
 
-        String[] choice = {"Xem tất cả thông tin", "Nhập vào một sinh viên", "Sắp xếp sinh viên", "Tìm kiếm sinh viên", "In thông tin", "Xóa thông tin", "Sửa thông tin", "Xóa tất cả dữ liệu", "Thoát chương trình"};
-        for (String sw : choice){
-            JButton nutbam = new JButton(sw);
-            nutbam.addActionListener(new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    JOptionPane.showMessageDialog(null, "Lựa chọn của bạn" + sw);
-                }
-            });
-            menu.add(nutbam);
-        }
+
+
     }
 }
